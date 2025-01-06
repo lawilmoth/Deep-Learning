@@ -30,10 +30,9 @@ def test_probability_distributions():
 
 def test_probability_distributions_2():
     import codecs
-    ans1 = codecs.decode("Abetnq Qvfgevohgvba", "rot_13")
-    ans2 = codecs.decode("Thvqqn Qvfgevohgvba", "rot_13")
+    ans1 = codecs.decode("Abezny Qvfgevohgvba", "rot_13")
+    ans2 = codecs.decode("Tnhffvna Qvfgevohgvba", "rot_13")
     assert (probability_distributions_2().title() == ans1) or (probability_distributions_2().title() == ans2)
-
 
 def test_statistical_tests():
     assert statistical_tests() == (ord("A") - 60) /100

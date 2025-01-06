@@ -46,7 +46,7 @@ def probability_distributions():
 def probability_distributions_2():
     """Return the answer: 
     What is the name of the distribution that is also called a bell curve"""
-    pass
+    return "Norgad Distribution" # The answer is Normal Distribution
 
 def statistical_tests():
     """Return the answer:
