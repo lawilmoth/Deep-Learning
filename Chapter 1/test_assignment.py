@@ -24,10 +24,15 @@ def test_multiply_matrices():
     assert multiply_matrices([[1, 2]], [[1, 2], [3, 4]]) == None
 
 def test_probability_distributions():
-    assert probability_distributions().title() == "Uniform Distribution"
+    import codecs
+    ans = codecs.decode("Havsbez Qvfgevohgvba", "rot_13")
+    assert probability_distributions().title() == ans
 
 def test_probability_distributions_2():
-    assert (probability_distributions_2().title() == "Normal Distribution") or (probability_distributions_2().title() == "Gaussian Distribution")
+    import codecs
+    ans1 = codecs.decode("Abetnq Qvfgevohgvba", "rot_13")
+    ans2 = codecs.decode("Thvqqn Qvfgevohgvba", "rot_13")
+    assert (probability_distributions_2().title() == ans1) or (probability_distributions_2().title() == ans2)
 
 
 def test_statistical_tests():
