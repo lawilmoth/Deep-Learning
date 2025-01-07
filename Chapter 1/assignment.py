@@ -8,8 +8,8 @@
 # You can assume that m1 and m2 are the same size.
 def add_matrices(m1, m2):
     """[[1, 2], [3, 4]], [[2, 2], [2, 2]] -> [[3, 4], [5, 6]]"""
-
     pass
+
 
 # Write a function scalar_mult(s, m) that multiplies a matrix, m, by a scalar, s.
 def scalar_mult(s, m):
@@ -46,7 +46,7 @@ def probability_distributions():
 def probability_distributions_2():
     """Return the answer: 
     What is the name of the distribution that is also called a bell curve"""
-    return "Norgad Distribution" # The answer is Normal Distribution
+    pass
 
 def statistical_tests():
     """Return the answer:
