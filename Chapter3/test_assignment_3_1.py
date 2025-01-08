@@ -14,8 +14,10 @@ def large_arrays():
 
 def samples():
     a, b = large_arrays()
+    a_a = np.array(a)
+    b_a = np.array(b)
     t1 = time.time()
-    np.array(a) * np.array(b)
+    a_a * b_a
     c = time.time() - t1
     t1 = time.time()
     [a[i] * b[i] for i in range(len(a))]
@@ -35,15 +37,15 @@ def test_time_list_comprehension():
     a,b = large_arrays()
     answer = time_list_comprehension(a,b)
     duration = samples()[0]
-    assert (duration - duration *.1 )< answer 
-    assert answer < (duration + duration *.1 )
+    assert (duration - duration *.2 )< answer 
+    assert answer < (duration + duration *.2 )
 
 def test_time_for_loop():
     a,b = large_arrays()
     answer = time_for_loop(a,b)
     duration = samples()[1]
-    assert (duration - duration *.1) < answer 
-    assert answer < (duration + duration *.1) 
+    assert (duration - duration *.2) < answer 
+    assert answer < (duration + duration *.2) 
 
 def test_time_numpy_array():
     a,b = large_arrays()

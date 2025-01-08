@@ -11,7 +11,8 @@ def time_list_comprehension(a, b):
     start = time.time()
     # Use a list comprehension to multiply each element of a by the corresponding element of b
     # Put your code here
-
+    [a[i] * b[i] for i in range(len(a))]
+    
     
 
     end = time.time()
@@ -31,7 +32,7 @@ def time_for_loop(a, b):
     return end - start
 
 t = time_list_comprehension(a, b)
-print(f"List comprehension time {t}")
+print(f"For loop time {t}")
 
 
 def time_numpy_array(a, b):
@@ -45,4 +46,4 @@ def time_numpy_array(a, b):
     return end - start
 
 t = time_list_comprehension(a, b)
-print(f"List comprehension time {t}")
+print(f"Numpy time {t}")
