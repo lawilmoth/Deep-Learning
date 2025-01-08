@@ -2,7 +2,7 @@ import pytest
 import numpy as np
 import random
 import time
-from assignment_2 import time_for_loop, time_list_comprehension, time_numpy_array
+from assignment_3_1 import time_for_loop, time_list_comprehension, time_numpy_array
 
 
 def large_arrays():
