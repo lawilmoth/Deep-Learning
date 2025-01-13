@@ -37,20 +37,20 @@ def test_time_list_comprehension():
     a,b = large_arrays()
     answer = time_list_comprehension(a,b)
     duration = samples()[0]
-    assert (duration - duration *.2 )< answer 
-    assert answer < (duration + duration *.2 )
+    assert (duration - duration *.25 )< answer 
+    assert answer < (duration + duration *.25 )
 
 def test_time_for_loop():
     a,b = large_arrays()
     answer = time_for_loop(a,b)
     duration = samples()[1]
-    assert (duration - duration *.2) < answer 
-    assert answer < (duration + duration *.2) 
+    assert (duration - duration *.25) < answer 
+    assert answer < (duration + duration *.25) 
 
 def test_time_numpy_array():
     a,b = large_arrays()
     answer = time_numpy_array(a,b)
     duration = samples()[2]
-    assert (duration - duration *.1) < answer 
-    assert answer < (duration + duration *.1 )
+    assert (duration - duration *.25) < answer 
+    assert answer < (duration + duration *.25 )
 

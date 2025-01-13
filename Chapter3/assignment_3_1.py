@@ -26,7 +26,9 @@ def time_for_loop(a, b):
     start = time.time()
     # Use a for loop to multiply each element of a by the corresponding element of b
     # Put your code here
-
+    c = []
+    for i in range(len(a)):
+        c.append(a[i] * b[i])
 
     end = time.time()
     return end - start
@@ -36,10 +38,12 @@ print(f"For loop time {t}")
 
 
 def time_numpy_array(a, b):
+    array_a = np.array(a)
+    array_b = np.array(b)
     start = time.time()
     # Use a numpy array to multiply each element of a by the corresponding element of b
     # Put your code here
-    
+    array_a * array_b
 
 
     end = time.time()

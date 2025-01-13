@@ -59,7 +59,7 @@ def test_create_and_save_array(tmp_path):
 def test_load_array_from_image():
     arr = load_array_from_image()
     from PIL import Image
-    im = Image.load("Chapter3/at.jpg")
+    im = Image.open("Chapter3/at.jpg")
     im_array = np.array(im)
     assert isinstance(arr, np.ndarray)
     assert im_array.shape == arr.shape
