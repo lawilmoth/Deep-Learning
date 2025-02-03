@@ -87,6 +87,7 @@ def interpolation_problem():
 
     # Based on the dataset, predict the age of first time mothers in 2025
     #return the age of first time mothers in 2025
+    print(m,c)
     
 
 
